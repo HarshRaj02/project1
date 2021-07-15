@@ -1,0 +1,11 @@
+.car {
+    width:200px;
+    box-shadow: 2px 2px 2px 5px rgba(0,0,0,.5);
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.car img {
+    max-height:20 rem;
+}

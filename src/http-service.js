@@ -10,8 +10,7 @@ class HttpService {
                     then(response => {
 
                         resolve(response.json());
-                        
-                        //resolve(response);
+                    
                     })
 
                    
