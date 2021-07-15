@@ -1,7 +1,23 @@
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HttpService from './http-service'
 
-function App() {
+
+const http = new HttpService();
+
+class App extends  Component {
+
+  constructor(props){
+    super(props);
+    http.getCars().then((response)=>{
+
+      
+      console.log(response);
+    });
+  }
+  
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +36,6 @@ function App() {
       </header>
     </div>
   );
-}
+}}
 
 export default App;
